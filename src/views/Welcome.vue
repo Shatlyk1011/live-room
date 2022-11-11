@@ -1,11 +1,11 @@
 <template>
   <div class="welcome container">
-    <p>Welcome</p>
+    <p>Добро пожаловать!</p>
     <div v-if="showLogin">
-      <h2>Войти</h2>
+      <h2>Вход</h2>
       <login-form @login="enterChat" />
       <p>
-        Нету аккаутна?
+        Нет аккаунта?
         <span @click="showLogin = !showLogin">Регистрация</span>
       </p>
     </div>
@@ -45,10 +45,11 @@ export default {
 };
 </script>
 
-<style>
+<style >
 .welcome {
   text-align: center;
   padding: 20px 0;
+  background-color: #8ecae6;
 }
 /* form styles */
 .welcome form {
@@ -62,12 +63,21 @@ export default {
 .welcome input {
   width: 100%;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 1px;
   border: 1px solid #eee;
   outline: none;
   color: #999;
   margin: 10px auto;
+  border-bottom: 2px solid transparent;
 }
+
+.welcome input:focus:invalid {
+  border-bottom: 2px solid #f86b6b;
+}
+.welcome input:focus:valid {
+  border-bottom: 2px solid green;
+}
+
 .welcome span {
   font-weight: bold;
   text-decoration: underline;

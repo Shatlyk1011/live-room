@@ -1,6 +1,6 @@
 <template>
-  <div class="chat-window">
-    <div v-if="error">{{ error }}</div>
+  <div class="chat-window" v-if="error">
+    <div>{{ error }}</div>
   </div>
   <div class="messages" v-if="documents" ref="messages">
     <div v-for="doc in formattedDocuments" :key="doc.id" class="single">
@@ -61,5 +61,6 @@ export default {
 .messages {
   max-height: 400px;
   overflow: auto;
+  padding: 1rem;
 }
 </style>

@@ -1,25 +1,25 @@
 body {
-  background: #e3e1ff;
-  color: #444;
+  background: #8ecae6;
+  color: #333;
 }
 .container {
   width: 90%;
   max-width: 960px;
   margin: 80px auto;
-  border-radius: 20px;
+  border-radius: 3px;
   box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
   background: white;
 }
 .error {
-  color: #ff3f80;
+  color: #f02828;
   font-size: 14px;
 }
 button {
   text-decoration: none;
-  background: #5ae4ca;
+  background: #023047;
   color: white;
   font-weight: bold;
   border: 0;
-  border-radius: 20px;
+  border-radius: 3px;
   padding: 10px 20px;
 }

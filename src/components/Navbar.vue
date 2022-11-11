@@ -1,10 +1,12 @@
 <template>
   <nav v-if="user">
     <div>
-      <p>Hey there {{ user.displayName }}</p>
-      <p class="email">Currently logged in as {{ user.email }}</p>
+      <p>Приветствую, {{ user.displayName }} !</p>
+      <p class="email">
+        {{ user.displayName }} зашел под логином {{ user.email }}
+      </p>
     </div>
-    <button @click="handleClick">Logout</button>
+    <button @click="handleClick">Выйти</button>
   </nav>
 </template>
 

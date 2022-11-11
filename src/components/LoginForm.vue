@@ -1,9 +1,15 @@
 <template>
   <form @submit.prevent="handleSubmit">
     <input type="email" required placeholder="email" v-model="email" />
-    <input type="password" required placeholder="password" v-model="password" />
+    <input
+      type="password"
+      required
+      placeholder="пароль"
+      v-model="password"
+      minlength="6"
+    />
     <div class="error">{{ error }}</div>
-    <button>Login</button>
+    <button>Войти</button>
   </form>
 </template>
 
